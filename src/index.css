@@ -133,55 +133,32 @@ table {
 /* ^  Globals ----------------------------------------------------------------------------------------------------------------- */
 
 * {
-	margin: none;
-	box-sizing: border-box;
+  margin: none;
+  box-sizing: border-box;
 }
 
 :root {
-	--hightlight: #34a5da;
-	--dark: #222222;
-	--dark-lighter: #3b3b3b;
-	--light: #f1f2f6;
-	--space-extra-small: 0.5rem;
-	--space-small: 1rem;
-	--space: 2rem;
-	--pill: 1000vmax;
-	--transition: 300ms;
+  --highlight: rgb(51, 165, 218);
+  --darkColor: rgb(34, 34, 34);
+  --light: rgb(235, 235, 235);
 }
 
 body {
-	background-color: var(--dark);
+  background-color: var(--darkColor);
 }
 
 header {
-	background-color: var(--hightlight);
-	padding: var(--space);
+  background-color: var(--highlight);
+  padding: 1.5rem;
 }
 
 main {
-	padding: var(--space);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 100%;
-}
-
-button {
-	background-color: var(--highlight);
-	border: none;
-	border-radius: var(--pill);
-	padding: var(--space-extra-small) var(--space-small);
-	transition: var(--transition);
-	font-weight: bold;
-	color: var(--light);
-	cursor: pointer;
-	max-width: max-content;
-	height: 100%;
-	max-height: max-content;
-}
-button:hover {
-	background-color: var(--dark-lighter);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
 }
 
 h1,
@@ -193,56 +170,120 @@ h6,
 p,
 a,
 li {
-	margin: var(--space-extra-small) 0;
-}
-
-label {
-	margin-top: var(--space-small);
-}
-
-input {
-	padding: var(--space-extra-small);
-	margin: var(--space-extra-small) 0;
-	border: 1px solid var(--dark-lighter);
+  margin: 0.5rem 0;
 }
 
 h2 {
-	font-size: 34px;
-	width: max-content;
+  font-size: 34px;
+  width: max-content;
+  font-weight: 600;
 }
 
 h3 {
-	font-size: 20px;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 h4 {
-	font-size: 16px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-input {
-	display: block;
-	width: 100%;
+p,
+li {
+  font-size: 20px;
 }
 
-.container {
-	width: 100%;
-	max-width: 900px;
+ol {
+  list-style: number;
 }
 
 /*? Header ----------------------------------------------------------------------------------------------------------------- */
 
-
-
 /*? End of Header--------------------------------------------------------------------------------------------------------------- */
 
-
-
 /** Main area ------------------------------------------------------------------------------------------------------------------- */
+main {
+  padding: 100px 80px;
+}
 
 /** End of Main ----------------------------------------------------------------------------------------------------------------- */
 
-
-
 /*^ Person Card ------------------------------------------------------------------------------------------------------------------- */
+.personCard {
+  background-color: rgb(235, 235, 235);
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  max-width: 1600px;
+}
 
+.personCard h2 {
+  margin: 0;
+}
+
+.currentNumber {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.personInfo {
+  box-sizing: border-box;
+  padding: 0 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.personDetails {
+  margin-top: 30px;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.moviesList {
+  padding-left: 90px;
+}
+
+.name {
+  margin-bottom: 30px;
+}
+
+.name h2 {
+  border-bottom: 2px solid var(--highlight);
+}
+
+.details {
+  margin-bottom: 30px;
+}
 /*^ End Person Card ------------------------------------------------------------------------------------------------------------------- */
+
+/*?  Buttons--------------------------------------------------------------------------------------------------------------------------- */
+
+.btnsDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1550px;
+}
+
+.links {
+  color: rgb(254, 254, 254);
+  cursor: pointer;
+}
+
+.btns {
+  background-color: var(--highlight);
+  color: rgb(254, 254, 254);
+  border-radius: 15px;
+  padding: 8px 20px;
+}
+
+.btnGroup {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 250px;
+}
+/*? End of Buttons--------------------------------------------------------------------------------------------------------------------------- */
